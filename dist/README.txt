@@ -1,0 +1,1 @@
+Assets that are done processing will be put here in their own folder.
