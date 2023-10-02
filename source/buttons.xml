@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- This is a base for adding new grid rearrangements.
+
+Buttons:
+
+<rearrange>
+    <file>button_template.png</file>
+    <from>
+        
+    </from>
+    <to>
+    </to>
+    <result_file>buttons/template.png</result_file>
+</rearrange>
+
+Anything else:
+
+<rearrange>
+    <file>grid_template.png</file>
+    <from>
+        
+    </from>
+    <to>
+    </to>
+    <result_file>grids/template.png</result_file>
+</rearrange>
+
+-->
+<build>
+
+<rearrange>
+    <file>button_bland.png</file>
+    <non-repeating>
+        <size>8,36</size>
+        <move>
+            0,0;4,4:0,0|
+            8,0;4,4:4,0|
+            0,8;4,4:0,4|
+            8,8;4,4:4,4|
+
+            0,12;4,4:0,8|
+            8,12;4,4:4,8|
+            0,20;4,4:0,12|
+            8,20;4,4:4,12|
+
+            0,24;4,4:0,16|
+            8,24;4,4:4,16|
+            0,32;4,4:0,20|
+            8,32;4,4:4,20|
+
+            4,4;4,4:0,24|
+            4,16;4,4:0,28|
+            4,28;4,4:0,32
+        </move>
+    </non-repeating>
+    <vertically-repeating>
+        <size>4,24</size>
+        <move>
+            4,0;4,4:0,0|
+            4,8;4,4:0,4|
+
+            4,12;4,4:0,8|
+            4,20;4,4:0,12|
+
+            4,24;4,4:0,16|
+            4,32;4,4:0,20
+        </move>
+    </vertically-repeating>
+    <horizontally-repeating>
+        <size>24,4</size>
+        <move>
+            0,4;4,4:0,0|
+            8,4;4,4:4,0|
+
+            0,16;4,4:8,0|
+            8,16;4,4:12,0|
+
+            0,28;4,4:16,0|
+            8,28;4,4:20,0
+        </move>
+    </horizontally-repeating>
+    <result-file>buttons/bland</result-file>
+</rearrange>
+
+</build>
