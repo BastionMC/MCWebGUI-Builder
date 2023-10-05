@@ -1,32 +1,46 @@
 from xmltodict import parse as parse_xml
 from PIL import Image as image
 from colorama import *
-import os
+import os, time
 
 just_fix_windows_console()
 
+xml_files, png_files = [], []
+output = ""
+
+def write_output(write):
+    global output
+    
+    output += write + "\n"
 def create_dist():
     print(Back.YELLOW + Fore.BLACK + " WRN " + Style.RESET_ALL + " Please create a " + Fore.BLACK + Style.BRIGHT + "dist " + Style.RESET_ALL + "folder before running this program.")
+    write_output("[WRN] Please create a \"dist\" folder before running this program.")
 def dist_filled():
     print(Back.YELLOW + Fore.BLACK + " WRN " + Style.RESET_ALL + " The " + Fore.BLACK + Style.BRIGHT + "dist " + Style.RESET_ALL + "folder has some files in it. Please clear it first.")
+    write_output("[WRN] The \"dist\" folder has some files in it. Please clear it first.")
 def no_source():
     print(Back.RED + Fore.BLACK + " ERR " + Style.RESET_ALL + " The " + Fore.BLACK + Style.BRIGHT + "source " + Style.RESET_ALL + "folder doesn't seem to exist. Cannot continue.")
+    write_output("[ERR] The \"source\" folder doesn't seem to exist. Cannot continue.")
 def no_files(format, folder):
     print(Back.RED + Fore.BLACK + " ERR " + Style.RESET_ALL + " No " + Fore.BLACK + Style.BRIGHT + "." + format + Style.RESET_ALL + " files were found in the " + Fore.BLACK + Style.BRIGHT + folder + Style.RESET_ALL + " folder!")
+    write_output("[ERR] No \"." + format + "\" files were found in the " + folder + " folder!")
 def got_file(file):
     print(Back.GREEN + Fore.BLACK + " GOT " + Style.RESET_ALL + " Found the file " + Fore.BLACK + Style.BRIGHT + file + Style.RESET_ALL + ".")
+    write_output("[GOT] Found the file \"" + file + "\".")
 def require_file(file):
     print(Back.MAGENTA + Fore.BLACK + " REQ " + Style.RESET_ALL + " Requested the file " + Fore.BLACK + Style.BRIGHT + file + Style.RESET_ALL + ".")
+    write_output("[REQ] Requested the file \"" + file + "\".")
 def pillow_action(string):
     print(Back.CYAN + Fore.BLACK + " PIL " + Style.RESET_ALL + " " + string)
 def end():
     print(Back.WHITE + Fore.BLACK + " END " + Style.RESET_ALL + " All files have been processed.")
+    write_output("[END] All files have been processed.")
 def invalid_xml():
     print(Back.RED + Fore.BLACK + " ERR " + Style.RESET_ALL + " This XML file is invalid, it cannot be processed.")
+    write_output("[ERR] This XML file is invalid, it cannot be processed.")
 def no_part_list(part):
     print(Back.YELLOW + Fore.BLACK + " NIL " + Style.RESET_ALL + " No " + part + " parts were found.")
-
-xml_files, png_files = [], []
+    write_output("[NIL] No " + part + " parts were found.")
 
 def rearrange(tree):
     require_file(tree["file"])
@@ -178,4 +192,8 @@ try:
 except:
     create_dist()
 
-os.system("pause")
+with open("build.log.txt", "w") as log_file:
+    log_file.write(output)
+    log_file.close()
+
+time.sleep(15)
