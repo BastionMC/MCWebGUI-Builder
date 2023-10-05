@@ -15,6 +15,8 @@ def no_files(format, folder):
     print(Back.RED + Fore.BLACK + " ERR " + Style.RESET_ALL + " No " + Fore.BLACK + Style.BRIGHT + "." + format + Style.RESET_ALL + " files were found in the " + Fore.BLACK + Style.BRIGHT + folder + Style.RESET_ALL + " folder!")
 def got_file(file):
     print(Back.GREEN + Fore.BLACK + " GOT " + Style.RESET_ALL + " Found the file " + Fore.BLACK + Style.BRIGHT + file + Style.RESET_ALL + ".")
+def require_file(file):
+    print(Back.MAGENTA + Fore.BLACK + " REQ " + Style.RESET_ALL + " Requested the file " + Fore.BLACK + Style.BRIGHT + file + Style.RESET_ALL + ".")
 def pillow_action(string):
     print(Back.CYAN + Fore.BLACK + " PIL " + Style.RESET_ALL + " " + string)
 def end():
@@ -27,6 +29,7 @@ def no_part_list(part):
 xml_files, png_files = [], []
 
 def rearrange(tree):
+    require_file(tree["file"])
     original = image.open("source/" + tree["file"])
     pillow_action("Opened file to rearrange.")
 
@@ -144,11 +147,6 @@ try:
 
             if xml_files == []:
                 no_files("xml", "source")
-            if png_files == []:
-                no_files("png", "source")
-
-            for png_file in png_files:
-                got_file(png_file)
 
             for xml_file in xml_files:
                 got_file(xml_file)
