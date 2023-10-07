@@ -52,7 +52,7 @@
             8,28;4,4:20,0
         </move>
     </horizontally-repeating>
-    <result-file>buttons/template</result-file>
+    <result-file>button/template</result-file>
 </rearrange>
 
 -->
@@ -110,7 +110,7 @@
             8,28;4,4:20,0
         </move>
     </horizontally-repeating>
-    <result-file>buttons/bland</result-file>
+    <result-file>button/bland</result-file>
 </rearrange>
 
 <!-- Disabled -->
@@ -141,7 +141,7 @@
             8,4;4,4:4,0
         </move>
     </horizontally-repeating>
-    <result-file>buttons/disabled</result-file>
+    <result-file>button/disabled</result-file>
 </rearrange>
 
 <!-- Dark -->
@@ -196,7 +196,7 @@
             8,28;4,4:20,0
         </move>
     </horizontally-repeating>
-    <result-file>buttons/dark</result-file>
+    <result-file>button/dark</result-file>
 </rearrange>
 
 <!-- Green -->
@@ -251,7 +251,7 @@
             8,28;4,4:20,0
         </move>
     </horizontally-repeating>
-    <result-file>buttons/green</result-file>
+    <result-file>button/green</result-file>
 </rearrange>
 
 <!-- Purple -->
@@ -306,7 +306,7 @@
             8,28;4,4:20,0
         </move>
     </horizontally-repeating>
-    <result-file>buttons/purple</result-file>
+    <result-file>button/purple</result-file>
 </rearrange>
 
 <!-- Red -->
@@ -361,7 +361,7 @@
             8,28;4,4:20,0
         </move>
     </horizontally-repeating>
-    <result-file>buttons/red</result-file>
+    <result-file>button/red</result-file>
 </rearrange>
 
 </build>

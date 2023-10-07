@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<build>
+
+<!-- Titlebar -->
+<rearrange>
+    <file>titlebar.png</file>
+    <non-repeating>
+        <size>8,12</size>
+        <move>
+            0,0;4,4:0,0|
+            8,0;4,4:4,0|
+            0,8;4,4:0,4|
+            8,8;4,4:4,4|
+
+            4,4;4,4:0,8
+        </move>
+    </non-repeating>
+    <vertically-repeating>
+        <size>4,8</size>
+        <move>
+            4,0;4,4:0,0|
+            4,8;4,4:0,4
+        </move>
+    </vertically-repeating>
+    <horizontally-repeating>
+        <size>8,4</size>
+        <move>
+            0,4;4,4:0,0|
+            8,4;4,4:4,0
+        </move>
+    </horizontally-repeating>
+    <result-file>titlebar</result-file>
+</rearrange>
+
+</build>
