@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<build>
+
+<!-- Loading -->
+<make-apng>
+    <file>loading.png</file>
+    <size>7,7</size>
+    <frame-time>4</frame-time>
+    <loop>0</loop>
+    <result-file>loading</result-file>
+</make-apng>
+
+<!-- Icon Highlight -->
+<make-apng>
+    <file>icon_highlight.png</file>
+    <size>12,12</size>
+    <frame-time>0</frame-time>
+    <loop>none</loop>
+    <result-file>icon_highlight</result-file>
+</make-apng>
+
+</build>

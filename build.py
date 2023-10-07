@@ -6,12 +6,15 @@ import os, time
 just_fix_windows_console()
 
 xml_files, png_files = [], []
-output = ""
+output = "[ MCWEBGUI BUILDER LOG FILE ]\n"
 
 def write_output(write):
     global output
-    
     output += write + "\n"
+
+    with open("build.log.txt", "w") as log_file:
+        log_file.write(output)
+        log_file.close()
 def create_dist():
     print(Back.YELLOW + Fore.BLACK + " WRN " + Style.RESET_ALL + " Please create a " + Fore.BLACK + Style.BRIGHT + "dist " + Style.RESET_ALL + "folder before running this program.")
     write_output("[WRN] Please create a \"dist\" folder before running this program.")
@@ -42,6 +45,12 @@ def invalid_xml():
 def no_part_list(part):
     print(Back.YELLOW + Fore.BLACK + " NIL " + Style.RESET_ALL + " No " + part + " parts were found.")
     write_output("[NIL] No " + part + " parts were found.")
+def removed_empty_folders():
+    print(Back.WHITE + Fore.BLACK + " CLR " + Style.RESET_ALL + " Removed empty folders.")
+    write_output("[CLR] Removed empty folders.")
+def missing_information():
+    print(Back.RED + Fore.BLACK + " ERR " + Style.RESET_ALL + " There seems to be some information missing. Cannot continue.")
+    write_output("[ERR] There seems to be some information missing. Cannot continue.")
 
 def rearrange(tree):
     require_file(tree["file"])
@@ -145,7 +154,32 @@ def rearrange(tree):
     except:
         no_part_list("horizontally-repeating")
 
-# "Sorry for indent hell." - Jae
+def make_apng(tree):
+    require_file(tree["file"])
+    spritesheet = image.open("source/" + tree["file"])
+    pillow_action("Opened file to make APNG.")
+    frames = []
+
+    try:
+        size = tree["size"].split(",")
+
+        for y in range(0, spritesheet.height, int(size[1])):
+            for x in range(0, spritesheet.width, int(size[0])):
+                frame = spritesheet.crop((x, y, x + int(size[0]), y + int(size[1])))
+                frame = frame.convert("RGBA")
+                frames.append(frame)
+
+        pillow_action("Split all APNG frames.")
+
+        if tree["loop"] == "none":
+            frames[0].save("dist/" + tree["result-file"] + ".png", format="PNG", save_all=True, append_images=frames[1:], duration=int(tree["frame-time"]), loop=1, )
+        else:
+            frames[0].save("dist/" + tree["result-file"] + ".png", format="PNG", save_all=True, append_images=frames[1:], duration=int(tree["frame-time"]), loop=int(tree["loop"]))
+    except Exception as e:
+        missing_information()
+        print(e)
+
+# "Sorry for indent hell lol" - Jaegerwald
 
 dont_continue = False
 try:
@@ -185,16 +219,25 @@ try:
                                         rearrange(item)
                                 else:
                                     rearrange(xml_file["build"][action])
+                            case "make-apng":
+                                if is_list:
+                                    for item in xml_file["build"][action]:
+                                        make_apng(item)
+                                else:
+                                    make_apng(xml_file["build"][action])
                 except:
                     invalid_xml()
+            for root, directorys, files in os.walk("dist/", topdown=False):
+                for directory in directorys:
+                    directory_path = os.path.join(root, directory)
+                    if not os.listdir(directory_path):
+                        os.rmdir(directory_path)
+            
+            removed_empty_folders()
             end()
         except:
             no_source()
 except:
     create_dist()
-
-with open("build.log.txt", "w") as log_file:
-    log_file.write(output)
-    log_file.close()
 
 time.sleep(15)
