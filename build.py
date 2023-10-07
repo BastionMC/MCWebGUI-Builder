@@ -32,6 +32,7 @@ def require_file(file):
     write_output("[REQ] Requested the file \"" + file + "\".")
 def pillow_action(string):
     print(Back.CYAN + Fore.BLACK + " PIL " + Style.RESET_ALL + " " + string)
+    write_output("[PIL] " + string)
 def end():
     print(Back.WHITE + Fore.BLACK + " END " + Style.RESET_ALL + " All files have been processed.")
     write_output("[END] All files have been processed.")
