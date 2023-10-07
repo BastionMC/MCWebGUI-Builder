@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<build>
+
+<!-- Off -->
+<rearrange>
+    <file>switch_on.png</file>
+    <non-repeating>
+        <size>32,16</size>
+        <move>
+            0,0;32,16:0,0
+        </move>
+    </non-repeating>
+    <result-file>switch/off</result-file>
+</rearrange>
+
+<!-- Switch On -->
+<make-apng>
+    <file>switch_on.png</file>
+    <size>32,16</size>
+    <frame-time>4</frame-time>
+    <loop>none</loop>
+    <result-file>switch/switch_on</result-file>
+</make-apng>
+
+<!-- On -->
+<rearrange>
+    <file>switch_off.png</file>
+    <non-repeating>
+        <size>32,16</size>
+        <move>
+            0,0;32,16:0,0
+        </move>
+    </non-repeating>
+    <result-file>switch/on</result-file>
+</rearrange>
+
+<!-- Switch Off -->
+<make-apng>
+    <file>switch_off.png</file>
+    <size>32,16</size>
+    <frame-time>4</frame-time>
+    <loop>none</loop>
+    <result-file>switch/switch_off</result-file>
+</make-apng>
+
+</build>

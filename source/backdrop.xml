@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <build>
 
-<!-- Titlebar -->
+<!-- Main -->
 <rearrange>
-    <file>titlebar.png</file>
+    <file>backdrop_main.png</file>
     <non-repeating>
         <size>8,12</size>
         <move>
@@ -29,7 +29,31 @@
             8,4;4,4:4,0
         </move>
     </horizontally-repeating>
-    <result-file>titlebar</result-file>
+    <result-file>backdrop/main</result-file>
+</rearrange>
+
+<!-- Simple -->
+<rearrange>
+    <file>backdrop_simple.png</file>
+    <non-repeating>
+        <size>4,4</size>
+        <move>
+            0,0;4,4:0,0
+        </move>
+    </non-repeating>
+    <result-file>backdrop/simple</result-file>
+</rearrange>
+
+<!-- Loading -->
+<rearrange>
+    <file>backdrop_loading.png</file>
+    <non-repeating>
+        <size>4,4</size>
+        <move>
+            0,0;4,4:0,0
+        </move>
+    </non-repeating>
+    <result-file>backdrop/loading</result-file>
 </rearrange>
 
 </build>
