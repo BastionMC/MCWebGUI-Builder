@@ -271,7 +271,7 @@ example.xml
 
 ---
 
-That's all the thing's you can build right now, more will be added in the future as we need it.
+That's all the things you can build right now, more will be added in the future as we need it.
 
 <p align="center"><strong>Need a little bit of help?</strong></p>
 <p align="center"><strong><a href="https://discord.gg/KvZJGqMEhU"><img image-rendering="pixelated" height="64px" width="64px" src="graphics/Discord.png"><br></img>Join our Discord Server</a></strong></p>
