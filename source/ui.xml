@@ -19,4 +19,11 @@
     <result-file>icon_highlight</result-file>
 </make-apng>
 
+<!-- Missing -->
+<rescale>
+    <file>missing.png</file>
+    <size>64,64</size>
+    <result-file>missing</result-file>
+</rescale>
+
 </build>
