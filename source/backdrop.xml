@@ -33,27 +33,17 @@
 </rearrange>
 
 <!-- Simple -->
-<rearrange>
+<rescale>
     <file>backdrop_simple.png</file>
-    <non-repeating>
-        <size>4,4</size>
-        <move>
-            0,0;4,4:0,0
-        </move>
-    </non-repeating>
+    <size>4,4</size>
     <result-file>backdrop/simple</result-file>
-</rearrange>
+</rescale>
 
 <!-- Loading -->
-<rearrange>
+<rescale>
     <file>backdrop_loading.png</file>
-    <non-repeating>
-        <size>4,4</size>
-        <move>
-            0,0;4,4:0,0
-        </move>
-    </non-repeating>
+    <size>4,4</size>
     <result-file>backdrop/loading</result-file>
-</rearrange>
+</rescale>
 
 </build>
