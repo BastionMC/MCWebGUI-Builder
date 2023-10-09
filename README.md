@@ -1,3 +1,4 @@
+<p align="center"><img image-rendering="pixelated" height="256px" width="256px" src="graphics/MCWebGUI-Builder_Logo.png">
 <h1 align="center">MCWebGUI Builder</h1>
 <p align="center"><img image-rendering="pixelated" height="256px" width="520px" src="graphics/Steve_House.png"></img></p>
 <p align="center"><strong>The build tool for adding new content to MCWebGUI.</strong></p>

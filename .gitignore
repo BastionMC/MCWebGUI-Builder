@@ -1,3 +1,5 @@
 /__pycache__
 /dist/*
 /build.log.txt
+/output
+/source/source.zip
