@@ -4,7 +4,7 @@
 
 MCWebGUI's images have to be arranged in a very specific way, and it is just painful to add new content to it. So we made this tool to easily compile readable images into their necessary formats, this will also compile a lot of other stuff in the future, such as CSS and JavaScript files. It allows for new content to be added easily using XML configuration files.
 
-<h1 align="center"><img image-rendering="pixelated" height="32px" width="32px" src="graphics/Installation.png">Installation</h1>
+<h1 align="center"><img image-rendering="pixelated" height="24px" width="24px" src="graphics/Installation.png">Installation</h1>
 
 1. Download the `.exe` file, that is attached to the latest release.
 2. Put it anywhere you'd like, optimally, in it's own, seperate folder.
@@ -13,7 +13,7 @@ MCWebGUI's images have to be arranged in a very specific way, and it is just pai
 5. Extract included files in the archive to the `source` folder.
 6. **You're done, the setup process is complete.**
 
-<h1 align="center"><img image-rendering="pixelated" height="32px" width="32px" src="graphics/How_to_use.png">How to use</h1>
+<h1 align="center"><img image-rendering="pixelated" height="24px" width="24px" src="graphics/How_to_use.png">How to use</h1>
 Before using MCWebGUI Builder - We  heavily recommend reading the entire README file, so you know what you're doing.
 
 <br>
@@ -276,7 +276,7 @@ That's all the thing's you can build right now, more will be added in the future
 <p align="center"><strong>Need a little bit of help?</strong></p>
 <p align="center"><strong><a href="https://discord.gg/KvZJGqMEhU"><img image-rendering="pixelated" height="64px" width="64px" src="graphics/Discord.png"><br></img>Join our Discord Server</a></strong></p>
 
-<h1 align="center"><img image-rendering="pixelated" height="32px" width="32px" src="graphics/Problem_Solving.png">Problem solving</h1>
+<h1 align="center"><img image-rendering="pixelated" height="24px" width="24px" src="graphics/Problem_Solving.png">Problem solving</h1>
 
 > **WRN** - Please create a `dist` folder before running this program.
 
