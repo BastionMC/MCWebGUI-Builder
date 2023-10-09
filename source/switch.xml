@@ -43,4 +43,46 @@
     <result-file>switch/switch_off</result-file>
 </make-apng>
 
+<!-- Off Hover -->
+<rearrange>
+    <file>switch_on_hover.png</file>
+    <non-repeating>
+        <size>32,16</size>
+        <move>
+            0,0;32,16:0,0
+        </move>
+    </non-repeating>
+    <result-file>switch/off_hover</result-file>
+</rearrange>
+
+<!-- Switch On Hover -->
+<make-apng>
+    <file>switch_on_hover.png</file>
+    <size>32,16</size>
+    <frame-time>4</frame-time>
+    <loop>none</loop>
+    <result-file>switch/switch_on_hover</result-file>
+</make-apng>
+
+<!-- On Hover -->
+<rearrange>
+    <file>switch_off_hover.png</file>
+    <non-repeating>
+        <size>32,16</size>
+        <move>
+            0,0;32,16:0,0
+        </move>
+    </non-repeating>
+    <result-file>switch/on_hover</result-file>
+</rearrange>
+
+<!-- Switch Off Hover -->
+<make-apng>
+    <file>switch_off_hover.png</file>
+    <size>32,16</size>
+    <frame-time>4</frame-time>
+    <loop>none</loop>
+    <result-file>switch/switch_off_hover</result-file>
+</make-apng>
+
 </build>
