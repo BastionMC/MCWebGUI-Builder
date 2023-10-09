@@ -88,13 +88,13 @@ def rearrange_part(part, tree, original_image, suffix):
             old_position = intify_list(old_position)
 
             old_size = old_part[1].split(",")
-            old_size = intify_list(size)
+            old_size = intify_list(old_size)
 
             crop_area = (
                 old_position[0],
                 old_position[1],
-                old_size[0] + old_position[0],
-                old_size[1] + old_position[1]
+                old_position[0] + old_size[0],
+                old_position[1] + old_size[1]
             )
 
             new_part = original_image.crop(crop_area)
