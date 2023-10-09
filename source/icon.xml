@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<build>
+
+<!-- Icons -->
+<split>
+    <file>icon.png</file>
+    <size>12,12</size>
+    <files>
+        icon/general,
+        icon/advanced,
+        icon/multiplayer,
+        icon/cheats,
+        icon/resourcepacks,
+        icon/contentpacks,
+        icon/experimental,
+        icon/scripting,
+        icon/debug,
+        icon/news,
+        icon/realms,
+        icon/servers,
+        icon/worlds,
+        icon/worlds_2,
+        icon/worlds_3,
+        icon/friends,
+        icon/friends_2,
+        icon/friends_3
+    </files>
+</split>
+
+</build>

@@ -175,6 +175,9 @@ def make_apng(tree):
             frames[0].save("dist/" + tree["result-file"] + ".png", format="PNG", save_all=True, append_images=frames[1:], duration=int(tree["frame-time"]), loop=1)
         else:
             frames[0].save("dist/" + tree["result-file"] + ".png", format="PNG", save_all=True, append_images=frames[1:], duration=int(tree["frame-time"]), loop=int(tree["loop"]))
+
+        pillow_action("Saved APNG image.")
+
     except Exception as e:
         missing_information()
         print(e)
@@ -188,18 +191,22 @@ def split(tree):
     try:
         size = tree["size"].split(",")
         files = tree["files"].split(",")
-
+        
         for y in range(0, spritesheet.height, int(size[1])):
             for x in range(0, spritesheet.width, int(size[0])):
                 sprite = spritesheet.crop((x, y, x + int(size[0]), y + int(size[1])))
                 sprite = sprite.convert("RGBA")
                 images.append(sprite)
 
+        pillow_action("Split all images.")
+
         for i in range(0, len(images)):
             try:
                 images[i].save("dist/" + files[i] + ".png", format="PNG")
             except:
                 return
+        
+        pillow_action("Saved images.")
             
     except Exception as e:
         missing_information()
