@@ -137,17 +137,17 @@ example.xml
         </move>
     </non-repeating>
     <vertically-repeating>
-        <size>4,8</size> <!-- x,y -->
-        <move>
-            4,0;4,4:0,0| <!-- Top Edge -->
-            4,8;4,4:0,4 <!-- Bottom Edge -->
-        </move>
-    </vertically-repeating>
-    <horizontally-repeating>
         <size>8,4</size> <!-- x,y -->
         <move>
             0,4;4,4:0,0| <!-- Left Edge -->
             8,4;4,4:4,0 <!-- Right Edge -->
+        </move>
+    </vertically-repeating>
+    <horizontally-repeating>
+        <size>4,8</size> <!-- x,y -->
+        <move>
+            4,0;4,4:0,0| <!-- Top Edge -->
+            4,8;4,4:0,4 <!-- Bottom Edge -->
         </move>
     </horizontally-repeating>
     <result-file>example/grid</result-file>
