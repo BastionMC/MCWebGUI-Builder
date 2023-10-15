@@ -1,6 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <build>
 
+<!-- Logo -->
+<rescale>
+	<file>logo.png</file>
+	<size>64,64</size>
+	<result-file>logo</result-file>
+</rescale>
+
 <!-- Loading -->
 <make-apng>
     <file>loading.png</file>
