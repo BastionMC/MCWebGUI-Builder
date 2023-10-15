@@ -290,7 +290,7 @@ This warning ocurrs because there is no dist folder. Please create one to solve 
 The dist folder has files in it that prevent the build process from starting. You have two options:
 
 1. You  delete the files in the `dist` folder manually
-2. You can download the `clear_dist.bat` file from the latest release, to do the progress automatically in the future.
+2. You can download the `clear_dist.bat` file from the latest release, to do the clearing process automatically in the future.
 
 ---
 
