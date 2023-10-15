@@ -281,7 +281,7 @@ That's all the things you can build right now, more will be added in the future 
 
 > **WRN** - Please create a `dist` folder before running this program.
 
-This warnung ocurrs because there is no dist folder. Please create one to solve the issue, or check if you have mispelled it.
+This warning ocurrs because there is no dist folder. Please create one to solve the issue, or check if you have mispelled it.
 
 ---
 
