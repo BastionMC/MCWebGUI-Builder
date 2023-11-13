@@ -311,7 +311,7 @@ There are no `.xml` configuration files for building the assets, therefore the p
 Something's wrong with your `.xml` file. There could be a lot of reasons why this ocurrs, here are a few:
 
 1. The file is empty, therefore there is nothing to be parsed.
-2. You forgot the `<built>` tag, check if it's missing.
+2. You forgot the `<build>` tag, check if it's missing.
 3. There's a syntax error. Check if your file structure is valid.
 
 Are none of these the issue? Ask in [our Discord server](https://discord.gg/KvZJGqMEhU).
