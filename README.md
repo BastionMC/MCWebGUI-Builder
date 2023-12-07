@@ -320,7 +320,7 @@ Are none of these the issue? Ask in [our Discord server](https://discord.gg/KvZJ
 
 > **NIL** - No `*` parts were found.
 
-This warning ocurrs while running a rearrange built action. It is because there are no `non-repeating`, `vertically-repeating` or `horizontally-repeating` parts. This can be ignored.
+This warning ocurrs while running a rearrange built action. It is because there are no `non-repeating`, `vertically-repeating` or `horizontally-repeating` parts. This can also ocurr when something about your `.xml` file is wrong, maybe an invalid path or one splitter (`|`) less or more.
 
 ---
 
