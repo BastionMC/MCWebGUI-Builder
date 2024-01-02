@@ -1,88 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <build>
 
-<!-- Off -->
-<rearrange>
-    <file>switch_on.png</file>
-    <non-repeating>
-        <size>32,16</size>
-        <move>
-            0,0;32,16:0,0
-        </move>
-    </non-repeating>
-    <result-file>switch/off</result-file>
-</rearrange>
-
-<!-- Switch On -->
-<make-apng>
-    <file>switch_on.png</file>
+<!-- Button Knobs -->
+<split>
+	<file>switch.png</file>
     <size>32,16</size>
-    <frame-time>4</frame-time>
-    <loop>none</loop>
-    <result-file>switch/switch_on</result-file>
-</make-apng>
+    <files>
+        switch/knob,
+        switch/slider
+    </files>
+</split>
 
-<!-- On -->
-<rearrange>
-    <file>switch_off.png</file>
-    <non-repeating>
-        <size>32,16</size>
-        <move>
-            0,0;32,16:0,0
-        </move>
-    </non-repeating>
-    <result-file>switch/on</result-file>
-</rearrange>
-
-<!-- Switch Off -->
-<make-apng>
-    <file>switch_off.png</file>
+<!-- Disabled Switch States -->
+<split>
+    <file>switch_disabled.png</file>
     <size>32,16</size>
-    <frame-time>4</frame-time>
-    <loop>none</loop>
-    <result-file>switch/switch_off</result-file>
-</make-apng>
-
-<!-- Off Hover -->
-<rearrange>
-    <file>switch_on_hover.png</file>
-    <non-repeating>
-        <size>32,16</size>
-        <move>
-            0,0;32,16:0,0
-        </move>
-    </non-repeating>
-    <result-file>switch/off_hover</result-file>
-</rearrange>
-
-<!-- Switch On Hover -->
-<make-apng>
-    <file>switch_on_hover.png</file>
-    <size>32,16</size>
-    <frame-time>4</frame-time>
-    <loop>none</loop>
-    <result-file>switch/switch_on_hover</result-file>
-</make-apng>
-
-<!-- On Hover -->
-<rearrange>
-    <file>switch_off_hover.png</file>
-    <non-repeating>
-        <size>32,16</size>
-        <move>
-            0,0;32,16:0,0
-        </move>
-    </non-repeating>
-    <result-file>switch/on_hover</result-file>
-</rearrange>
-
-<!-- Switch Off Hover -->
-<make-apng>
-    <file>switch_off_hover.png</file>
-    <size>32,16</size>
-    <frame-time>4</frame-time>
-    <loop>none</loop>
-    <result-file>switch/switch_off_hover</result-file>
-</make-apng>
+    <files>
+        switch/disabled_off,
+        switch/disabled_on
+    </files>
+</split>
 
 </build>

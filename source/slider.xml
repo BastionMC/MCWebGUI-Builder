@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<build>
+
+<!-- Slider Knobs -->
+<split>
+	<file>slider.png</file>
+    <size>32,16</size>
+    <files>
+        slider/knob
+    </files>
+</split>
+
+<!-- Disabled Slider Knobs -->
+<split>
+	<file>slider_disabled.png</file>
+    <size>32,16</size>
+    <files>
+        slider/knob_disabled
+    </files>
+</split>
+
+<!-- Slider Area -->
+<rearrange>
+    <file>slider.png</file>
+    <non-repeating>
+        <size>8,18</size>
+        <move>
+            0,16;8,6:0,0|
+            24,16;8,6:0,6|
+            
+            0,22;1,6:0,12
+        </move>
+    </non-repeating>
+    <vertically-repeating>
+        <size>8,12</size>
+        <move>
+            16,16;8,6:0,0|
+            8,16;8,6:0,6
+        </move>
+    </vertically-repeating>
+    <result-file>slider/slider</result-file>
+</rearrange>
+
+<!-- Disabled Slider Area -->
+<rearrange>
+    <file>slider_disabled.png</file>
+    <non-repeating>
+        <size>8,18</size>
+        <move>
+            0,16;8,6:0,0|
+            24,16;8,6:0,6|
+            
+            0,22;1,6:0,12
+        </move>
+    </non-repeating>
+    <vertically-repeating>
+        <size>8,12</size>
+        <move>
+            16,16;8,6:0,0|
+            8,16;8,6:0,6
+        </move>
+    </vertically-repeating>
+    <result-file>slider/slider_disabled</result-file>
+</rearrange>
+
+</build>

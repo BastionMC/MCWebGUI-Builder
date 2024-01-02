@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<build>
+
+<!-- Menu Icons -->
+<split>
+    <file>menu_icons.png</file>
+    <size>12,12</size>
+    <files>
+        icons/general,
+        icons/advanced,
+        icons/multiplayer,
+        icons/cheats,
+        icons/resource_packs,
+        icons/content_packs,
+        icons/experimental,
+        icons/scripting,
+        icons/debug,
+        icons/news,
+        icons/realms,
+        icons/servers,
+        icons/worlds,
+        icons/worlds_2,
+        icons/worlds_3,
+        icons/friends,
+        icons/friends_2,
+        icons/friends_3,
+        icons/invites
+    </files>
+</split>
+
+<!-- Titlebar Icons -->
+<split>
+    <file>titlebar_icons.png</file>
+    <size>7,7</size>
+    <files>
+        icons/titlebar_close,
+        icons/titlebar_minimize,
+        icons/titlebar_window
+    </files>
+</split>
+
+</build>
