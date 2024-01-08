@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<build>
+
+<!-- Checkbox -->
+<rescale>
+    <file>checkbox.png</file>
+    <size>24,36</size>
+    <result-file>checkbox/normal</result-file>
+</rescale>
+
+<!-- Disabled Checkbox -->
+<rescale>
+    <file>checkbox_disabled.png</file>
+    <size>24,12</size>
+    <result-file>checkbox/disabled</result-file>
+</rescale>
+
+</build>
