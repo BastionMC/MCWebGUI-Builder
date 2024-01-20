@@ -22,7 +22,7 @@ Before using MCWebGUI Builder - We  heavily recommend reading the entire README 
 **Building Assets**
 1. Run the `.exe` file in order to build the assets.
 2. Navigate to the `dist` folder
-3. Transfer the build assets to MCWebGUI's assets folder *as is*.
+3. Transfer the built assets to MCWebGUI's assets folder *as is*.
 4. Start your MCWebGUI project and see if everything is working correctly.
 5. **You're done, optionally, referr to Problem solving.**
 
