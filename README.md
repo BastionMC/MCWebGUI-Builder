@@ -189,7 +189,7 @@ example.xml
     <size>8,8</size>
     <frame-time>64</frame-time>
     <loop>0</loop>
-    <result-file>example/animatiom</result-file>
+    <result-file>example/animation</result-file>
 </rearrange>
 
 </build>
