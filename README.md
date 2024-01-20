@@ -87,7 +87,7 @@ example.xml
 
 <!-- Rearrange Example -->
 <rearrange>
-    <file>grid_template.xml</file>
+    <file>grid_template.png</file>
     <non-repeating>
         <size></size>
         <move>
@@ -108,7 +108,7 @@ example.xml
 
 </build>
 ```
-Now hold tight, this might be a little bit complicated. We use a custom syntax for rearranging the images. Each single rearrangement is split by a `|` character. The rearrangement is split into two  parts by a `:`. The old position part, containing x and y position, and the size of the part to rearrange. The other part is justs the x and y coordinates on where to put it on the new image. The formatting goes a little like this:
+Now hold tight, this might be a little bit complicated. We use a custom syntax for rearranging the images. Each single rearrangement is split by a `|` character. The rearrangement is split into two  parts by a `:`. The old position part, containing the position and size of the part to rearrange. The other half is just where it gets put on the new image. The formatting goes a little like this:
 ```
 0,0;4,4:0,0|
 4,4;4,4:4,4
@@ -124,7 +124,7 @@ example.xml
 
 <!-- Rearrange Example -->
 <rearrange>
-    <file>grid_template.xml</file>
+    <file>grid_template.png</file>
     <non-repeating>
         <size>8,12</size> <!-- x,y -->
         <move>
