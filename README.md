@@ -53,13 +53,13 @@ example.xml
 <build>
 
 <!-- Animation Example -->
-<rearrange>
+<make-apng>
     <file></file>
     <size></size>
     <frame-time></frame-time>
     <loop></loop>
     <result-file></result-file>
-</rearrange>
+</make-apng>
 
 </build>
 ```
@@ -71,13 +71,13 @@ example.xml
 <build>
 
 <!-- Animation Example -->
-<rearrange>
+<make-apng>
     <file>animation_template.png</file>
     <size>8,8</size>
     <frame-time>64</frame-time>
     <loop>0</loop>
     <result-file>example/animation</result-file>
-</rearrange>
+</make-apng>
 
 </build>
 ```
@@ -92,11 +92,11 @@ example.xml
 <build>
 
 <!-- Split Example -->
-<rearrange>
+<split>
     <file></file>
     <size></size>
     <files></files>
-</rearrange>
+</split>
 
 </build>
 ```
@@ -108,7 +108,7 @@ example.xml
 <build>
 
 <!-- Split Example -->
-<rearrange>
+<split>
     <file>split_template.png</file>
     <size>32,32</size>
     <files>
@@ -117,7 +117,7 @@ example.xml
         example/pig,
         example/sheep
     </files>
-</rearrange>
+</split>
 
 </build>
 ```
