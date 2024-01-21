@@ -205,12 +205,6 @@ Are none of these the issue? Ask in [our Discord server](https://discord.gg/KvZJ
 
 ---
 
-> **NIL** - No `*` parts were found.
-
-This warning ocurrs while running a rearrange build action. It is because there are no `non-repeating`, `vertically-repeating` or `horizontally-repeating` parts. This can also ocurr when something about your `.xml` file is wrong, maybe an invalid path or one splitter (`|`) less or more.
-
----
-
 > **ERR** - There seems to be some information missing. Cannot continue.
 
 This error can ocurr while **Making an APNG file**, **Splitting Images** or **Rescaling Images**. There can be multiple reasons why this error ocurrs.
