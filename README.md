@@ -3,7 +3,7 @@
 <p align="center"><img image-rendering="pixelated" height="256px" width="520px" src="graphics/Steve_House.png"></img></p>
 <p align="center"><strong>The build tool for adding new content to MCWebGUI.</strong></p>
 
-MCWebGUI's images have to be arranged in a very specific way, and it is just painful to add new content to it. So we made this tool to easily compile readable images into their necessary formats, this will also compile a lot of other stuff in the future, such as CSS and JavaScript files. It allows for new content to be added easily using XML configuration files.
+MCWebGUI's images have to be arranged in a very specific way, and it is just painful to add new content to it. So we made this tool to easily compile readable images into their necessary formats. This will also compile a lot of other stuff in the future, such as CSS and JavaScript files. It allows for new content to be added easily using XML configuration files.
 
 <h1 align="center"><img image-rendering="pixelated" height="24px" width="24px" src="graphics/Installation.png">Installation</h1>
 
@@ -11,7 +11,7 @@ MCWebGUI's images have to be arranged in a very specific way, and it is just pai
 2. Put it anywhere you'd like, optimally, in it's own, seperate folder.
 3. Create the folders `dist` and `source` in the same folder as the `.exe`.
 4. Download the `source.zip` archive from the latest release.
-5. Extract included files in the archive to the `source` folder.
+5. Extract the included files in the archive to the `source` folder.
 6. **You're done, the setup process is complete.**
 
 <h1 align="center"><img image-rendering="pixelated" height="24px" width="24px" src="graphics/How_to_use.png">How to use</h1>
@@ -21,10 +21,10 @@ Before using MCWebGUI Builder - We  heavily recommend reading the entire README 
 
 **Building Assets**
 1. Run the `.exe` file in order to build the assets.
-2. Navigate to the `dist` folder
+2. Navigate to the `dist` folder.
 3. Transfer the built assets to MCWebGUI's assets folder *as is*.
 4. Start your MCWebGUI project and see if everything is working correctly.
-5. **You're done, optionally, referr to Problem solving.**
+5. **You're done, optionally, refer to Problem solving.**
 
 **Adding new assets**
 
@@ -76,7 +76,7 @@ example.xml
 
 </build>
 ```
-Woah, that's a lot. Don't worry, it's simple to understand. `<file>` is the file of the image to rearrange parts from, aka. the base image. Let's start with using the file included by default, `grid_template.png` (Make sure to include the file extension). The different `<non-repeating>`, `<vertically-repeating>` and `<horizontally-repeating>` tags are all completely optional. They are describing where the file gets saved to.
+Woah, that's a lot. Don't worry, it's simple to understand. `<file>` is the file of the image to rearrange parts from, aka, the base image. Let's start with using the file included by default, `grid_template.png` (Make sure to include the file extension). The different `<non-repeating>`, `<vertically-repeating>` and `<horizontally-repeating>` tags are all completely optional. They describe where the file gets saved to.
 
 Finally, we have `<result-file>`. Let's save the rearranged images to `example/template` (Without file extension). By now, your `example.xml` file should look something like this:
 ```xml
@@ -176,7 +176,7 @@ example.xml
 
 </build>
 ```
-Let's quickly go over the tags. `<file>`, as before, is the base file to create the animation from. `<size>` is the size  of each frame, split by a comma again. `<frame-time>` is how long a frame stays. `<loop>` is the loop amount, if set to 0 it loops infinitely, if set to `none` it will not loop, aka. only play once. `<result-file>` is where the file gets put, just like before. Here's an example, with an animation included by default:
+Let's quickly go over the tags. `<file>`, as before, is the base file to create the animation from. `<size>` is the size of each frame, split by a comma again. `<frame-time>` is how long a frame stays. `<loop>` is the loop amount, if set to 0 it loops infinitely, if set to `none` it will not loop, aka. only play once. `<result-file>` is where the file gets put, just like before. Here's an example, with an animation included by default:
 ```xml
 example.xml
 
