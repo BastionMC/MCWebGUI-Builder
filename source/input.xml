@@ -2,65 +2,13 @@
 <build>
 
 <!-- Input -->
-<rearrange>
+<split>
     <file>input.png</file>
-    <non-repeating>
-        <size>8,12</size>
-        <move>
-            0,0;4,4:0,0|
-            8,0;4,4:4,0|
-            0,8;4,4:0,4|
-            8,8;4,4:4,4|
-
-            4,4;4,4:0,8
-        </move>
-    </non-repeating>
-    <vertically-repeating>
-        <size>8,4</size>
-        <move>
-            0,4;4,4:0,0|
-            8,4;4,4:4,0
-        </move>
-    </vertically-repeating>
-    <horizontally-repeating>
-        <size>4,8</size>
-        <move>
-            4,0;4,4:0,0|
-            4,8;4,4:0,4
-        </move>
-    </horizontally-repeating>
-    <result-file>input/input</result-file>
-</rearrange>
-
-<!-- Disabled -->
-<rearrange>
-    <file>input_disabled.png</file>
-    <non-repeating>
-        <size>8,12</size>
-        <move>
-            0,0;4,4:0,0|
-            8,0;4,4:4,0|
-            0,8;4,4:0,4|
-            8,8;4,4:4,4|
-
-            4,4;4,4:0,8
-        </move>
-    </non-repeating>
-    <vertically-repeating>
-        <size>8,4</size>
-        <move>
-            0,4;4,4:0,0|
-            8,4;4,4:4,0
-        </move>
-    </vertically-repeating>
-    <horizontally-repeating>
-        <size>4,8</size>
-        <move>
-            4,0;4,4:0,0|
-            4,8;4,4:0,4
-        </move>
-    </horizontally-repeating>
-    <result-file>input/disabled</result-file>
-</rearrange>
+    <size>12,12</size>
+    <files>
+        input/writable,
+        input/disabled
+    </files>
+</split>
 
 </build>

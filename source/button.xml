@@ -1,378 +1,81 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- This is a base for adding new grid rearrangements.
+<!-- This is a base for adding new grid splitments.
 
-<rearrange>
+<split>
     <file>button_template.png</file>
-    <non-repeating>
-        <size>8,36</size>
-        <move>
-            0,0;4,4:0,0|
-            8,0;4,4:4,0|
-            0,8;4,4:0,4|
-            8,8;4,4:4,4|
-
-            0,12;4,4:0,8|
-            8,12;4,4:4,8|
-            0,20;4,4:0,12|
-            8,20;4,4:4,12|
-
-            0,24;4,4:0,16|
-            8,24;4,4:4,16|
-            0,32;4,4:0,20|
-            8,32;4,4:4,20|
-
-            4,4;4,4:0,24|
-            4,16;4,4:0,28|
-            4,28;4,4:0,32
-        </move>
-    </non-repeating>
-    <vertically-repeating>
-	    <size>24,4</size>
-        <move>
-            0,4;4,4:0,0|
-            8,4;4,4:4,0|
-
-            0,16;4,4:8,0|
-            8,16;4,4:12,0|
-
-            0,28;4,4:16,0|
-            8,28;4,4:20,0
-        </move>
-        <size>4,24</size>
-        <move>
-            4,0;4,4:0,0|
-            4,8;4,4:0,4|
-
-            4,12;4,4:0,8|
-            4,20;4,4:0,12|
-
-            4,24;4,4:0,16|
-            4,32;4,4:0,20
-        </move>
-    </vertically-repeating>
-    <horizontally-repeating>
-        <size>4,24</size>
-        <move>
-            4,0;4,4:0,0|
-            4,8;4,4:0,4|
-
-            4,12;4,4:0,8|
-            4,20;4,4:0,12|
-
-            4,24;4,4:0,16|
-            4,32;4,4:0,20
-        </move>
-    </horizontally-repeating>
-    <result-file>button/template</result-file>
-</rearrange>
+    <size>12,12</size>
+    <files>
+        button/template,
+        button/template_hover,
+        button/template_active
+    </files>
+</split>
 
 -->
 <build>
 
 <!-- Bland -->
-<rearrange>
+<split>
     <file>button_bland.png</file>
-    <non-repeating>
-        <size>8,36</size>
-        <move>
-            0,0;4,4:0,0|
-            8,0;4,4:4,0|
-            0,8;4,4:0,4|
-            8,8;4,4:4,4|
-
-            0,12;4,4:0,8|
-            8,12;4,4:4,8|
-            0,20;4,4:0,12|
-            8,20;4,4:4,12|
-
-            0,24;4,4:0,16|
-            8,24;4,4:4,16|
-            0,32;4,4:0,20|
-            8,32;4,4:4,20|
-
-            4,4;4,4:0,24|
-            4,16;4,4:0,28|
-            4,28;4,4:0,32
-        </move>
-    </non-repeating>
-    <vertically-repeating>
-        <size>24,4</size>
-        <move>
-            0,4;4,4:0,0|
-            8,4;4,4:4,0|
-
-            0,16;4,4:8,0|
-            8,16;4,4:12,0|
-
-            0,28;4,4:16,0|
-            8,28;4,4:20,0
-        </move>
-    </vertically-repeating>
-    <horizontally-repeating>
-        <size>4,24</size>
-        <move>
-            4,0;4,4:0,0|
-            4,8;4,4:0,4|
-
-            4,12;4,4:0,8|
-            4,20;4,4:0,12|
-
-            4,24;4,4:0,16|
-            4,32;4,4:0,20
-        </move>
-    </horizontally-repeating>
-    <result-file>button/bland</result-file>
-</rearrange>
+    <size>12,12</size>
+    <files>
+        button/bland,
+        button/bland_hover,
+        button/bland_active
+    </files>
+</split>
 
 <!-- Disabled -->
-<rearrange>
+<split>
     <file>button_disabled.png</file>
-    <non-repeating>
-        <size>8,12</size>
-        <move>
-            0,0;4,4:0,0|
-            8,0;4,4:4,0|
-            0,8;4,4:0,4|
-            8,8;4,4:4,4|
-
-            4,4;4,4:0,8
-        </move>
-    </non-repeating>
-    <vertically-repeating>
-        <size>8,4</size>
-        <move>
-            0,4;4,4:0,0|
-            8,4;4,4:4,0
-        </move>
-    </vertically-repeating>
-    <horizontally-repeating>
-        <size>4,8</size>
-        <move>
-            4,0;4,4:0,0|
-            4,8;4,4:0,4
-        </move>
-    </horizontally-repeating>
-    <result-file>button/disabled</result-file>
-</rearrange>
+    <size>12,12</size>
+    <files>
+        button/disabled
+    </files>
+</split>
 
 <!-- Dark -->
-<rearrange>
+<split>
     <file>button_dark.png</file>
-    <non-repeating>
-        <size>8,36</size>
-        <move>
-            0,0;4,4:0,0|
-            8,0;4,4:4,0|
-            0,8;4,4:0,4|
-            8,8;4,4:4,4|
-
-            0,12;4,4:0,8|
-            8,12;4,4:4,8|
-            0,20;4,4:0,12|
-            8,20;4,4:4,12|
-
-            0,24;4,4:0,16|
-            8,24;4,4:4,16|
-            0,32;4,4:0,20|
-            8,32;4,4:4,20|
-
-            4,4;4,4:0,24|
-            4,16;4,4:0,28|
-            4,28;4,4:0,32
-        </move>
-    </non-repeating>
-    <vertically-repeating>
-        <size>24,4</size>
-        <move>
-            0,4;4,4:0,0|
-            8,4;4,4:4,0|
-
-            0,16;4,4:8,0|
-            8,16;4,4:12,0|
-
-            0,28;4,4:16,0|
-            8,28;4,4:20,0
-        </move>
-    </vertically-repeating>
-    <horizontally-repeating>
-        <size>4,24</size>
-        <move>
-            4,0;4,4:0,0|
-            4,8;4,4:0,4|
-
-            4,12;4,4:0,8|
-            4,20;4,4:0,12|
-
-            4,24;4,4:0,16|
-            4,32;4,4:0,20
-        </move>
-    </horizontally-repeating>
-    <result-file>button/dark</result-file>
-</rearrange>
+    <size>12,12</size>
+    <files>
+        button/dark,
+        button/dark_hover,
+        button/dark_active
+    </files>
+</split>
 
 <!-- Green -->
-<rearrange>
+<split>
     <file>button_green.png</file>
-    <non-repeating>
-        <size>8,36</size>
-        <move>
-            0,0;4,4:0,0|
-            8,0;4,4:4,0|
-            0,8;4,4:0,4|
-            8,8;4,4:4,4|
-
-            0,12;4,4:0,8|
-            8,12;4,4:4,8|
-            0,20;4,4:0,12|
-            8,20;4,4:4,12|
-
-            0,24;4,4:0,16|
-            8,24;4,4:4,16|
-            0,32;4,4:0,20|
-            8,32;4,4:4,20|
-
-            4,4;4,4:0,24|
-            4,16;4,4:0,28|
-            4,28;4,4:0,32
-        </move>
-    </non-repeating>
-    <vertically-repeating>
-        <size>24,4</size>
-        <move>
-            0,4;4,4:0,0|
-            8,4;4,4:4,0|
-
-            0,16;4,4:8,0|
-            8,16;4,4:12,0|
-
-            0,28;4,4:16,0|
-            8,28;4,4:20,0
-        </move>
-    </vertically-repeating>
-    <horizontally-repeating>
-        <size>4,24</size>
-        <move>
-            4,0;4,4:0,0|
-            4,8;4,4:0,4|
-
-            4,12;4,4:0,8|
-            4,20;4,4:0,12|
-
-            4,24;4,4:0,16|
-            4,32;4,4:0,20
-        </move>
-    </horizontally-repeating>
-    <result-file>button/green</result-file>
-</rearrange>
+    <size>12,12</size>
+    <files>
+        button/green,
+        button/green_hover,
+        button/green_active
+    </files>
+</split>
 
 <!-- Purple -->
-<rearrange>
+<split>
     <file>button_purple.png</file>
-    <non-repeating>
-        <size>8,36</size>
-        <move>
-            0,0;4,4:0,0|
-            8,0;4,4:4,0|
-            0,8;4,4:0,4|
-            8,8;4,4:4,4|
-
-            0,12;4,4:0,8|
-            8,12;4,4:4,8|
-            0,20;4,4:0,12|
-            8,20;4,4:4,12|
-
-            0,24;4,4:0,16|
-            8,24;4,4:4,16|
-            0,32;4,4:0,20|
-            8,32;4,4:4,20|
-
-            4,4;4,4:0,24|
-            4,16;4,4:0,28|
-            4,28;4,4:0,32
-        </move>
-    </non-repeating>
-    <vertically-repeating>
-        <size>24,4</size>
-        <move>
-            0,4;4,4:0,0|
-            8,4;4,4:4,0|
-
-            0,16;4,4:8,0|
-            8,16;4,4:12,0|
-
-            0,28;4,4:16,0|
-            8,28;4,4:20,0
-        </move>
-    </vertically-repeating>
-    <horizontally-repeating>
-        <size>4,24</size>
-        <move>
-            4,0;4,4:0,0|
-            4,8;4,4:0,4|
-
-            4,12;4,4:0,8|
-            4,20;4,4:0,12|
-
-            4,24;4,4:0,16|
-            4,32;4,4:0,20
-        </move>
-    </horizontally-repeating>
-    <result-file>button/purple</result-file>
-</rearrange>
+    <size>12,12</size>
+    <files>
+        button/purple,
+        button/purple_hover,
+        button/purple_active
+    </files>
+</split>
 
 <!-- Red -->
-<rearrange>
+<split>
     <file>button_red.png</file>
-    <non-repeating>
-        <size>8,36</size>
-        <move>
-            0,0;4,4:0,0|
-            8,0;4,4:4,0|
-            0,8;4,4:0,4|
-            8,8;4,4:4,4|
-
-            0,12;4,4:0,8|
-            8,12;4,4:4,8|
-            0,20;4,4:0,12|
-            8,20;4,4:4,12|
-
-            0,24;4,4:0,16|
-            8,24;4,4:4,16|
-            0,32;4,4:0,20|
-            8,32;4,4:4,20|
-
-            4,4;4,4:0,24|
-            4,16;4,4:0,28|
-            4,28;4,4:0,32
-        </move>
-    </non-repeating>
-    <vertically-repeating>
-        <size>24,4</size>
-        <move>
-            0,4;4,4:0,0|
-            8,4;4,4:4,0|
-
-            0,16;4,4:8,0|
-            8,16;4,4:12,0|
-
-            0,28;4,4:16,0|
-            8,28;4,4:20,0
-        </move>
-    </vertically-repeating>
-    <horizontally-repeating>
-        <size>4,24</size>
-        <move>
-            4,0;4,4:0,0|
-            4,8;4,4:0,4|
-
-            4,12;4,4:0,8|
-            4,20;4,4:0,12|
-
-            4,24;4,4:0,16|
-            4,32;4,4:0,20
-        </move>
-    </horizontally-repeating>
-    <result-file>button/red</result-file>
-</rearrange>
+    <size>12,12</size>
+    <files>
+        button/red,
+        button/red_hover,
+        button/red_active
+    </files>
+</split>
 
 </build>

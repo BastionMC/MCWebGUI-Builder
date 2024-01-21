@@ -14,7 +14,7 @@
     <size>7,7</size>
     <frame-time>4</frame-time>
     <loop>0</loop>
-    <result-file>loading</result-file>
+    <result-file>ui/loading</result-file>
 </make-apng>
 
 <!-- Icon Highlight -->
@@ -23,48 +23,25 @@
     <size>12,12</size>
     <frame-time>0</frame-time>
     <loop>none</loop>
-    <result-file>icon_highlight</result-file>
+    <result-file>ui/icon_highlight</result-file>
 </make-apng>
 
 <!-- Missing -->
 <rescale>
     <file>missing.png</file>
     <size>64,64</size>
-    <result-file>missing</result-file>
+    <result-file>ui/missing</result-file>
 </rescale>
 
 <!-- Tooltip -->
-<rearrange>
+<split>
     <file>tooltip.png</file>
-    <non-repeating>
-        <size>8,28</size>
-        <move>
-            0,0;4,4:0,0|
-            8,0;4,4:4,0|
-            0,8;4,4:0,4|
-            8,8;4,4:4,4|
-            
-            4,4;4,4:0,24|
-
-            2,12;8,8:0,8|
-            2,24;8,8:0,16
-        </move>
-    </non-repeating>
-    <vertically-repeating>
-        <size>8,4</size>
-        <move>
-            0,4;4,4:0,0|
-            8,4;4,4:4,0
-        </move>
-    </vertically-repeating>
-    <horizontally-repeating>
-        <size>4,8</size>
-        <move>
-            4,0;4,4:0,0|
-            4,8;4,4:0,4
-        </move>
-    </horizontally-repeating>
-    <result-file>ui/tooltip</result-file>
-</rearrange>
+    <size>12,12</size>
+    <files>
+        ui/tooltip,
+        ui/tooltip_right,
+        ui/tooltip_left
+    </files>
+</split>
 
 </build>

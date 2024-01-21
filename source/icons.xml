@@ -6,25 +6,25 @@
     <file>menu_icons.png</file>
     <size>12,12</size>
     <files>
-        icons/general,
-        icons/advanced,
-        icons/multiplayer,
-        icons/cheats,
-        icons/resource_packs,
-        icons/content_packs,
-        icons/experimental,
-        icons/scripting,
-        icons/debug,
-        icons/news,
-        icons/realms,
-        icons/servers,
-        icons/worlds,
-        icons/worlds_2,
-        icons/worlds_3,
-        icons/friends,
-        icons/friends_2,
-        icons/friends_3,
-        icons/invites
+        icons/menu_general,
+        icons/menu_advanced,
+        icons/menu_multiplayer,
+        icons/menu_cheats,
+        icons/menu_resource_packs,
+        icons/menu_content_packs,
+        icons/menu_experimental,
+        icons/menu_scripting,
+        icons/menu_debug,
+        icons/menu_news,
+        icons/menu_realms,
+        icons/menu_servers,
+        icons/menu_worlds,
+        icons/menu_worlds_2,
+        icons/menu_worlds_3,
+        icons/menu_friends,
+        icons/menu_friends_2,
+        icons/menu_friends_3,
+        icons/menu_invites
     </files>
 </split>
 
