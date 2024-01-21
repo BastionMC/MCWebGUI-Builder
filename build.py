@@ -53,67 +53,12 @@ def end():
 def invalid_xml():
     print(Back.RED + Fore.BLACK + " ERR " + Style.RESET_ALL + " This XML file is invalid, it cannot be processed.")
     write_output("[ERR] This XML file is invalid, it cannot be processed.")
-def no_part_list(part):
-    print(Back.YELLOW + Fore.BLACK + " NIL " + Style.RESET_ALL + " No " + part + " parts were found.")
-    write_output("[NIL] No " + part + " parts were found.")
 def removed_empty_folders():
     print(Back.WHITE + Fore.BLACK + " CLR " + Style.RESET_ALL + " Removed empty folders.")
     write_output("[CLR] Removed empty folders.")
 def missing_information():
     print(Back.RED + Fore.BLACK + " ERR " + Style.RESET_ALL + " There seems to be some information missing. Cannot continue.")
     write_output("[ERR] There seems to be some information missing. Cannot continue.")
-
-def rearrange_part(part, tree, original_image, suffix):
-    try:
-        size = tree[part]["size"].split(",")
-        size = convert2xy(intify_list(size))
-
-        new_image = image.new(
-            "RGBA",
-            size,
-            (255, 255, 255, 0)
-        )
-        pillow_action("Created new empty image.")
-
-        instructions = tree[part]["move"].split("|")
-
-        for instruction in instructions:
-            parts = instruction.split(":")
-
-            new_position = parts[1].split(",")
-            new_position = convert2xy(intify_list(new_position))
-
-            old_part = parts[0].split(";")
-            old_position = old_part[0].split(",")
-            old_position = intify_list(old_position)
-
-            old_size = old_part[1].split(",")
-            old_size = intify_list(old_size)
-
-            crop_area = (
-                old_position[0],
-                old_position[1],
-                old_position[0] + old_size[0],
-                old_position[1] + old_size[1]
-            )
-
-            new_part = original_image.crop(crop_area)
-
-            new_image.paste(new_part, new_position)
-        pillow_action("Rearranged parts of the original image.")
-
-        new_image.save("dist/" + tree["result-file"] + suffix + ".png", format="PNG")
-        pillow_action("Saved newly created image.")
-    except: no_part_list(part)
-
-def rearrange(tree):
-    require_file(tree["file"])
-    original = image.open("source/" + tree["file"])
-    pillow_action("Opened file to rearrange.")
-
-    rearrange_part("non-repeating", tree, original, "")
-    rearrange_part("vertically-repeating", tree, original, "_vertical")
-    rearrange_part("horizontally-repeating", tree, original, "_horizontal")
 
 def split_spritesheet(spritesheet, tree):
     size = tree["size"].split(",")
@@ -198,7 +143,6 @@ def rescale(tree):
 
 def do_action(action, tree):
     match action:
-        case "rearrange": rearrange(tree)
         case "make-apng": make_apng(tree)
         case "split": split(tree)
         case "rescale": rescale(tree)  
