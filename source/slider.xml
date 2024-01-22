@@ -19,7 +19,7 @@
         slider/range,
         slider/background,
         slider/range_disabled,
-        slider/range_background
+        slider/background_disabled
     </files>
 </split>
 
