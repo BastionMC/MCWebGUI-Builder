@@ -1,8 +1,3 @@
 @echo off
-echo Installing "xmltodict" from PyPI
-pip install xmltodict
-echo Installing "colorama" from PyPI
-pip install colorama
-echo Installing "pillow" from PyPI
-pip install pillow
-echo Done!
+echo Required Libraries will now be installed
+pip install -r required_libraries.txt
