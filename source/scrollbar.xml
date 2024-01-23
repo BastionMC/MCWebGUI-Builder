@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<build>
+
+<!-- Scrollbar Knobs -->
+<split>
+	<file>scrollbar.png</file>
+    <size>12,12</size>
+    <files>
+        scrollbar/vertical,
+        scrollbar/horizontal
+    </files>
+</split>
+
+</build>
