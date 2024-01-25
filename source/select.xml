@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<build>
+
+<!-- Select -->
+<split>
+	<file>select.png</file>
+    <size>12,12</size>
+    <files>
+        select/normal,
+        select/dark,
+        select/disabled,
+        select/normal_hover,
+        select/dark_hover,
+        select/disabled_hover,
+        select/normal_active,
+        select/dark_active,
+        select/disabled_active,
+        select/normal_selected,
+        select/dark_selected,
+        select/disabled_selected
+    </files>
+</split>
+
+</build>

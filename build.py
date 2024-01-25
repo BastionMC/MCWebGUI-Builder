@@ -5,7 +5,7 @@ from PIL import Image as image
 from colorama import *
 import os, time
 
-if os.name() == "nt": just_fix_windows_console()
+if os.name == "nt": just_fix_windows_console()
 
 xml_files = []
 output = "[               MCWEBGUI BUILDER LOG FILE               ]\n"
