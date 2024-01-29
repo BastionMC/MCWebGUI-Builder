@@ -17,7 +17,7 @@ MCWebGUI's images have to be arranged in a very specific way, and it is just pai
 <h1 align="center"><img image-rendering="pixelated" height="24px" width="24px" src="graphics/How_to_use.png">How to use</h1>
 Before using MCWebGUI Builder - We  heavily recommend reading the entire README file, so you know what you're doing.
 
-<br>
+---
 
 **Building Assets**
 1. Run the `.exe` file in order to build the assets.
